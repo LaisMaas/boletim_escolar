@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Boletim Escolar</title>
+</head>
+<body>    
+
+    <header><h2>AC-AG</h2></header>
+
+    <main class="card">
+        <div class="title">
+            <h2 class="itens">Boletim Escolar</h2>
+        </div>
+        
+        <div class="card">
+            <div class="input-card">
+                <label for="nome-card" >Nome do aluno(a):</label>
+                <input type="text" id="nomeAluno" placeholder="Informe o nome do aluno">
+            </div>
+
+            <div class="input-card">
+                <label for="nota1-card" >Nota 1:</label>
+                <input type="number" id="nota1" placeholder="Informe a primeira nota">
+            </div>
+
+            
+            <div class="input-card">
+                <label for="nota2-card" >Nota 2:</label>
+                <input type="number" id="nota2" placeholder="Informe a segunda nota">
+            </div>
+            <div class="input-card">
+                <label for="totalAulas-card" >Total de aulas semestral:</label>
+                <input type="number" id="totalAulasSemestre" placeholder="Informe a quantidade de aulas ministradas">
+            </div>           
+
+            <div class="input-card">
+                <label for="frequencia-card" >Total de presenças: </label>
+                <input type="number" id="frequencia" placeholder="Informe o número de frequências do aluno">
+            </div>
+
+
+            <div class="btn-card">
+            <button onclick="boletim.salvar()" class="btn-salvar" id="btn-um">Salvar</button>
+
+            <button onclick="boletim.cancelar()" class="btn-cancelar">Cancelar</button>
+        </div>
+
+        <div class="content-table">
+            <table border="1">
+                <thead>
+                    <th>Id</th>
+                    <th>Aluno(a) </th>
+                    <th>N1 </th>
+                    <th>N2 </th>
+                    <th>Nota final </th>
+                    <th>Frequência % </th>
+                    <th>Ações </th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>                
+            </table>
+        </div>
+    </main>    
+</body>
+</html>
+
